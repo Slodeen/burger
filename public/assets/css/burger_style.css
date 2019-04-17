@@ -1,0 +1,65 @@
+body{ 
+  background-image: url("/assets/img/img.jpg");
+
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+ul {
+  padding: 2px;
+  margin: 2px;
+  font: white;
+  position: static;
+  float: left;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-form {
+  padding: 2px;
+  color: white;
+  opacity: 0.9;
+  float: right;
+  
+}
+
+.form-group {
+  opacity: 0.9;
+  color: white;
+  float: center;
+}
+
+
+.container{
+  position: relative;
+  opacity: 1.1;
+  color:white;
+  text-align: left;
+  float: left;
+  margin-right: 50px;
+  padding: 15px;
+}
+
+.change-devour{
+
+  background-color:orange;
+  width: 110px;
+
+}
+
+#add{
+  background-color: orange;
+  width: 110px;
+}
+
+#devoured{
+  margin-left: 15px;
+
+}
+

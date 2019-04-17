@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-12" id="devoured">
+     <h2>YOUR DEVOURED BURGERS</h2>
+  <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+      <p>{{id}}. {{burger_name}}</p>
+    {{/if}}
+    {{/each}}
+  </ul>
+</div>
+</div>
+
+<div class="col-md-auto">
+ <h1>Selected Burgers</h1>
+  <ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <p>{{id}}. {{burger_name}}
+        <span><button class="change-devour" data-id="{{id}}" data-newdevour=true>
+          {{#if devoured}}devoured!{{else}}devour me{{/if}}
+        </button></span>
+      </p>
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+
+<div id="form">
+  <div class="col col-lg-4">
+      <form class="create-form">
+      <div class="form-group">
+      <h1>Add Your Burger</h1>
+      <label for="burg">Type your burger name</label>
+      <input type="text" id="burg" name="burger_name">
+      </div>
+      <div class="form-group">
+      <label for="devoured">make your selection</label><br>
+      <input type="radio" name="devoured" value="0" checked>To be Devoured!
+      <br>
+      <input type="radio" name="devoured" value="1">Devoured!
+      </div>
+      <button id="add" type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+</div>
